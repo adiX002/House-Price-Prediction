@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 import streamlit as st
 import pickle
-df=pd.read_csv("Train.csv")
+df=pd.read_csv("train.csv")
 df=df.drop(['LONGITUDE','LATITUDE','BHK_OR_RK'],axis=1)
 df['ADDRESS'] = df['ADDRESS'].apply(lambda x: x.split(',')[-1].lower())
 leloc= LabelEncoder()
