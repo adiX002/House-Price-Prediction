@@ -42,8 +42,6 @@ def modelpred(postby,location,undconstru,rera,bhkno,sqft,readytomove,resale):
 st.set_page_config(layout="wide")
 
 st.title("HOUSE PRICE PREDICTION")
-st.write("This Project is Devoloped for MiniSkill Project of Data Mining Lab ")
-
 
 col1, col2,col3,col4 = st.tabs(['Sq. Ft.','BHK','Tab 3','Tab 4'])
 with col1:
